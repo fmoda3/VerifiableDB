@@ -1,0 +1,62 @@
+body { 
+    background-color: #b0c4de;
+}
+
+.inactive{
+    pointer-events: none;
+}
+
+#note_container{ 
+    background-color: white;
+}
+
+.toolbar {
+	/*position: absolute;
+	left: 0px;
+	top: 0px;*/
+	
+}
+
+#toolbar {
+	position:absolute;
+	width: 200px;
+	top: 0px;
+	left: 0px;
+	/*left:19.5%;*/
+	/*margin-left: auto;
+	margin-right: auto;*/
+}
+
+.centered {
+    margin: 0 auto;
+	margin-top: 100px;
+    text-align: left;
+    width: 800px;
+    height: 1000px;
+}
+
+.painting { 
+    cursor: crosshair;
+}
+
+#editor { 
+    width: 700px!important;
+    height:850px!important;
+    position:relative;
+    left:+50px;
+    top: +70px;
+	outline-color:rgba(0,0,0,0)!important;
+	overflow: scroll;
+}
+
+#wPaint1 { 
+    position:relative;
+    top: -950px;
+    background-color:rgba(0,0,0,0);
+    border:solid black 1px;
+    margin-bottom:30px;
+ }
+
+._wPaint_menu { 
+    
+}

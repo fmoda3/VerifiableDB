@@ -1,0 +1,38 @@
+This is the Demo for the VerifiableDB Django project.
+It uses the django admin page and two apps "bank" and "evil"
+
+* Start the server:
+	
+	python manage.py runserver
+	
+* In one browser window navigate to localhost:8000/admin/bank
+* In another browser window navigate to localhost:8000/admin/evil
+* login
+ 	username 'demo'
+ 	password 'hashtree'
+
+The demo uses the hash chaining implementation as well as the MACing scheme (verifying completeness and integrity)
+
+* In the first window (we'll refer to it as bank in the future) click 'Verifiable members'
+* Add a verifiable member in bank and click Save
+* Select the verifiable member and notice that the field data_hash has been updated and go back to the previous page
+
+* In the second window (we'll refer to it as evil in the future) click 'Members'
+* Select the member created in bank
+* Change the field 'Balance' and click Save
+
+* Again Select the verifiable member in bank and an error should pop up on the screen
+* Navigate back to the previous page
+
+* Change the field 'Balance' in evil back to the correct balance and repeat the two previous steps (this time no error should occur)
+
+
+The previous was a basic demonstration of integrity verification in order to demonstrate completeness:
+	* Create several new verifiable members in bank
+	* Edit the data of one or more member in evil
+	* Select one of the filters in bank
+	
+
+ 
+
+
